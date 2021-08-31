@@ -1,0 +1,193 @@
+#banner {
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding: 20px;
+	color: white;
+	background-image: url("../img/Banner2.png");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: multiply;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+
+#banner h1 {
+	margin-bottom: 10px;
+	font-size: 130px;
+	font-family: 'Hello';
+	text-shadow: 2px 2px black;
+}
+
+#banner h2 {
+	margin: 0;
+	font-size: 40px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(102, 101, 101);
+	text-align: center;
+	font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+	margin: 0;
+	border-radius: 0;
+	background-color:#E0162F;
+	border-color: #E0162F;
+	
+}
+
+#navbar .navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+@font-face{
+	font-family: Hello;
+	src: url('../fonts/Hello.ttf');
+}
+
+#navbar .navbar-nav li.active > a {
+	background-color: #d63c3c;
+	color: #fff;
+}
+
+section {
+	box-sizing: border-box;
+	padding: 20px 0 50px;
+}
+
+section:nth-child(odd) {
+	background-color: #e2e2e2;
+}
+
+section .title {
+	display: inline-block;
+	margin: 10px auto 40px;
+	padding: 0 10px 5px;
+	border-bottom: 3px solid #222222;
+}
+
+#sobre .content{
+	padding-top: 20px;
+}
+
+#palestrantes .thumbnail img {
+	width: 100%;
+}
+
+#local {
+	padding-bottom: 0;
+}
+
+#local iframe {
+	pointer-events: none;
+	display: block;
+	height: 400px;
+	width: 100%;
+	border:0;
+}
+
+#local iframe.active {
+	pointer-events: auto;
+}
+
+#ComoParticipar {
+	padding: 50px 20px 70px;
+}
+
+footer {
+	background-color: #E0162F;
+	padding: 20px;
+	color: white;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 15px auto;
+}
+
+.icon-social {
+	height: 40px;
+	width: 40px;
+	display: block;
+	background-size: contain;
+	margin: 5px 15px;
+}
+
+.icon-social.facebook {
+	background-image: url("../img/facebook-logo.png");
+}
+
+.icon-social.twitter {
+	background-image: url("../img/twitter-logo.png");
+}
+
+.icon-social.youtube {
+	background-image: url("../img/youtube-logo.png");
+}
+
+.affix {
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+@media screen and (max-width: 767px) {
+	#ComoParticipar h4 {
+		text-align: center;
+	}
+	#palestrantes .thumbnail {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#banner h1 {
+		font-size: 60px;
+	}
+	#banner h2 {
+		font-size: 20px;
+	}
+	section .title {
+		font-size: 16px;
+	}
+	#palestrantes .thumbnail h3 {
+		font-size: 18px;
+	}
+}
+
+.PC:hover {
+	background-color: #ff7b5a;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+	visibility: hidden;
+}
+
+
+.navbar-brand {
+	color: white !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+#navbar .navbar-nav li.active > a { 
+	color: #ffbf00;
+}
